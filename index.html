@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bennoenchen</title>
-  <link rel="stylesheet" href="https://www.bennoenchen.de/style/style.css">
-  <link rel="icon" href="https://www.bennoenchen.de/img/logo.ico">
+  <link rel="stylesheet" href="/style/style.css">
+  <link rel="icon" href="/img/logo.ico">
 </head>
 <body>
   <header>
     <div class="logo">
-      <a href="https://www.bennoenchen.de/"><img src="https://www.bennoenchen.de/img/logo2.png" alt="Icon"></a>
+      <a href="/"><img src="/img/logo2.png" alt="Icon"></a>
     </div>
     <div class="menu-toggle" onclick="toggleMenu(this)">
       <span></span>
@@ -18,10 +18,10 @@
       <span></span>
     </div>
     <nav id="nav">
-      <a href="https://www.bennoenchen.de/about_me/">Über mich</a>
-      <a href="https://www.bennoenchen.de/projects/">Projekte</a>
-      <a href="https://www.bennoenchen.de/contact/">Kontakt</a>
-      <a href="https://www.bennoenchen.de/dashboard/">Dashboard</a>
+      <a href="/about_me/">Über mich</a>
+      <a href="/projects/">Projekte</a>
+      <a href="/contact/">Kontakt</a>
+      <a href="/dashboard/">Dashboard</a>
     </nav>
   </header>
 
@@ -43,11 +43,11 @@
     <section class="main-section alt-section">
       <h2>Links</h2>
       <div class="link-images">
-        <a href="https://www.youtube.com/@xbennoenchen"><img src="https://www.bennoenchen.de/img/youtube.png"></a>
-        <a href="https://www.twitch.tv/xbennoenchen"><img src="https://www.bennoenchen.de/img/twitch.png"></a>
-        <a href="https://www.instagram.com/bennoenchen/"><img src="https://www.bennoenchen.de/img/instagram.png"></a>
-        <a href="https://www.instagram.com/xbennoenchen/"><img src="https://www.bennoenchen.de/img/instagram.png"></a>
-        <a href="https://discord.gg/4mJdEG7"><img src="https://www.bennoenchen.de/img/discord.png"></a>
+        <a href="https://www.youtube.com/@xbennoenchen"><img src="/img/youtube.png"></a>
+        <a href="https://www.twitch.tv/xbennoenchen"><img src="/img/twitch.png"></a>
+        <a href="https://www.instagram.com/bennoenchen/"><img src="/img/instagram.png"></a>
+        <a href="https://www.instagram.com/xbennoenchen/"><img src="/img/instagram.png"></a>
+        <a href="https://discord.gg/4mJdEG7"><img src="/img/discord.png"></a>
       </div>
     </section>
     <section class="main-section">
@@ -68,17 +68,10 @@
   </main>
 
   <footer>
-    &copy; 2026 Benno Mattis Biethan – Content licensed under CC BY-NC-SA 4.0. <br>
-    Website code &copy; 2026 Benno Biethan – licensed under GNU GPL v3.0 or later. <a href="https://www.bennoenchen.de/impressum_datenschutz/">Impressum und Datenschutz</a>
+    &copy; 2026 Bennoenchen<br>Content: CC BY-NC-SA 4.0 · Website code: GPL-3.0-or-later<br><a href="/impressum_datenschutz/">Impressum und Datenschutz</a>
   </footer>
 
-  <script>
-    function toggleMenu(toggleBtn) {
-      const nav = document.getElementById('nav');
-      nav.classList.toggle('active');
-      toggleBtn.classList.toggle('open');
-    }
-  </script>
+  <script src="/js/script.js"></script>
 </body>
 
 </html>
