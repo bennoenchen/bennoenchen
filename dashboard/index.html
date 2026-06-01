@@ -14,9 +14,9 @@
 <body>
   <header>
     <div class="logo">
-        <a href="/"><img src="/img/logo2.png" alt="Icon"></a>
+      <a href="/"><img src="/img/logo2.png" alt="Icon"></a>
     </div>
-    <div class="menu-toggle" onclick="toggleMenu(this)">
+    <div class="menu-toggle" id="menuToggle" onclick="toggleMenu(this)" aria-label="Menü öffnen" aria-expanded="false">
       <span></span>
       <span></span>
       <span></span>
@@ -24,10 +24,14 @@
     <nav id="nav">
       <a href="/about_me/">Über mich</a>
       <a href="/projects/">Projekte</a>
+      <a href="/lost_places/">Lost places</a>
       <a href="/contact/">Kontakt</a>
       <a href="/dashboard/">Dashboard</a>
     </nav>
   </header>
+
+  <div class="nav-backdrop" id="navBackdrop" onclick="closeMenu()"></div>
+  
   <main>
     <section class="main-section">
       <div class="title">
