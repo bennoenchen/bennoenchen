@@ -1,8 +1,14 @@
-.montserrat-light {
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
+:root {
+    --theme: #fe0000;
+    --bg: #1f1f1f;
+    --bg-light: #2f2f2f;
+    --bg-lighter: #3f3f3f;
+    --highlight: #00bcd4;
+    --text: #ffffff;
+    --text-dark: #aaaaaa;
+    --text-darker: #444444;
+    --link: #8d8d8d;
+    --card-background: #8e8e8e;
 }
 
 html, body {
@@ -17,23 +23,23 @@ body {
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
-    background-color: #1f1f1f;
-    color: #ffffff;
+    background-color: var(--bg);
+    color: var(--text);
 }
 
 a {
-    color: #8d8d8d;
+    color: var(--link);
     text-decoration: none;
 }
 
 a:hover {
-    color: #00bcd4;
+    color: var(--highlight);
 }
 
 header {
     position: sticky;
     top: 0;
-    background-color: #3f3f3f;
+    background-color: var(--bg-lighter);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -61,7 +67,7 @@ nav {
 }
 
 nav a {
-    color: #ffffff;
+    color: var(--text);
     text-decoration: none;
     font-weight: 500;
     font-size: 17px;
@@ -71,12 +77,12 @@ nav a {
 }
 
 nav a:hover {
-    color: #00bcd4;
+    color: var(--highlight);
     background-color: rgba(0, 188, 212, 0.1);
 }
 
 nav a.active {
-    color: #00bcd4;
+    color: var(--highlight);
     background-color: rgba(0, 188, 212, 0.12);
 }
 
@@ -95,7 +101,7 @@ nav a.active {
 .menu-toggle span {
     height: 2.5px;
     width: 100%;
-    background-color: #fff;
+    background-color: var(--text);
     border-radius: 2px;
     transition: transform 0.35s cubic-bezier(0.23, 1, 0.32, 1),
                 opacity 0.25s ease,
@@ -146,7 +152,7 @@ nav a.active {
     nav {
         flex-direction: column;
         gap: 0;
-        background-color: #2a2a2a;
+        background-color: var(--bg-light);
         position: fixed;
         top: 0;
         right: 0;
@@ -181,7 +187,7 @@ nav a.active {
     nav a.active {
         padding-left: 2.5rem;
         background-color: rgba(0, 188, 212, 0.1);
-        color: #00bcd4;
+        color: var(--highlight);
     }
 }
 
@@ -195,14 +201,14 @@ main {
     flex-direction: column;
 }
 
-.alt-section:nth-child(even) {
-    background-color: #2f2f2f;
+.alt-section {
+    background-color: var(--bg-light);
 }
 
 
 h1 {
     font-weight: 900;
-    color: #fe0000;
+    color: var(--theme);
     font-size: clamp(2rem, 10vw, 64px);
     margin-bottom: 1rem;
     max-width: 100%;
@@ -215,13 +221,21 @@ h1 {
 }
 
 .link-images {
-    width: 100%;
+    display: flex;
+    gap: 1rem;
+    max-width: 800px;
 }
 
-.link-images img {
-    width: 10%;
+.link-images a {
+    flex: 1 1 0;
+    min-width: 0;
+}
+
+.link-images a img {
+    width: 100%;
     height: auto;
     border-radius: 10px;
+    display: block;
 }
 
 .video-wrapper {
@@ -254,9 +268,9 @@ h1 {
 }
 
 footer {
-    background-color: #3f3f3f;
+    background-color: var(--bg-lighter);
     text-align: center;
     padding: 1rem;
     font-size: 0.9rem;
-    color: #aaa;
+    color: var(--text-dark);
 }
