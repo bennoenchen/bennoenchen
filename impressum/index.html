@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bennoenchen</title>
+  <link rel="stylesheet" href="/style/style.css">
+  <link rel="icon" href="/img/logo.ico">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="/"><img src="/img/logo2.png" alt="Icon"></a>
+    </div>
+    <div class="menu-toggle" onclick="toggleMenu(this)">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav id="nav">
+      <a href="/about_me/">Über mich</a>
+      <a href="/projects/">Projekte</a>
+      <a href="/contact/">Kontakt</a>
+      <a href="/dashboard/">Dashboard</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="main-section">
+      <div class="title">
+        <h1>Impressum</h1>
+      </div>
+    </section>
+    <section class="main-section alt-section">
+      <h2>Namenserklärung</h2>
+      <p>Der Name „Bennoenchen“ wird von Benno Mattis Biethan als Pseudonym für Online-Veröffentlichungen verwendet, insbesondere für Quellcode, Webseiten, Videos und sonstige digitale Inhalte.</p>
+    </section>
+    <section class="main-section">
+        <h2>Impressum</h2>
+        <p>Diese Webseite dient ausschließlich der privaten, nicht-geschäftsmäßigen Nutzung und dem Austausch über persönliche Interessen. Es werden keine Produkte oder Dienstleistungen verkauft oder beworben, keine Einnahmen erzielt und keine Daten zu kommerziellen Zwecken ausgewertet. Sollte sich dies in Zukunft ändern, wird ein vollständiges Impressum umgehend nachgereicht. Verantwortlich für den Inhalt gemäß § 18 Abs. 2 MStV:<br>Benno Mattis Biethan (Pseudonym: Bennoenchen)<br>E-Mail: <a href="mailto:business.bennoenchen@gmail.com">business.bennoenchen@gmail.com</a><br>Bitte beachte: Bei Fragen oder Anliegen zur Webseite kannst du mich gerne über die oben genannte E-Mail-Adresse kontaktieren.</p>
+    </section>
+    <section class="main-section alt-section">
+        <h2>Lizenzen und Urheberrecht</h2>
+        <p>Sofern nicht ausdrücklich anders angegeben, gelten für alle von Bennoenchen veröffentlichten Inhalte die folgenden Lizenzbedingungen:<br> • Inhalte wie Texte, Bilder, Grafiken und Videos stehen unter der Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0).<br> • Quellcode, Softwareprojekte und programmatische Arbeiten stehen unter der GNU General Public License Version 3 oder neuer (GPL-3.0-or-later).<br>Abweichende Lizenzangaben in einzelnen Projekten, Repositories oder Veröffentlichungen haben Vorrang.</p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2026 Bennoenchen<br>Content: CC BY-NC-SA 4.0 · Website code: GPL-3.0-or-later<br><a href="/impressum/">Impressum</a> / <a href="/datenschutz/">Datenschutz</a>
+  </footer>
+
+  <script>
+    function toggleMenu(toggleBtn) {
+      const nav = document.getElementById('nav');
+      nav.classList.toggle('active');
+      toggleBtn.classList.toggle('open');
+    }
+  </script>
+</body>
+
+</html>
